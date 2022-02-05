@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner leia = new Scanner(System.in);
+
+		System.out.println("Digite um numero de 1 a 10: ");
+		int numero = leia.nextInt();
+		
+		String pares = "";
+		
+		String impares = "";
+
+		int contador = 1;
+
+		while (contador <= numero) {
+			System.out.println("Imprindo a sequência de " + contador);
+			
+
+			if ((contador % 2) ==0) {
+				// numero par
+				pares+= contador + ", ";
+				System.out.println("par: " + contador);
+				
+				
+				
+			}else {
+				// o numero e impar
+				impares +=contador+ ", ";
+				
+							}
+			
+			contador ++;
+			
+		}
+		
+		System.out.println(" Pares:" + pares);
+		System.out.println(" impares:" + impares);
+
+	}
+
+}
